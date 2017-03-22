@@ -1,0 +1,861 @@
+{
+  "configuration": {
+    "host": "localhost",
+    "exchange": "exchange.dell.cpsd.syds.system.definition.request",
+    "routingKey": "dell.cpsd.syds.converged.system.addition.requested"
+  },
+  "properties": {
+    "headers": {
+      "__TypeId__": "com.dell.cpsd.syds.converged.system.addition.requested"
+    },
+    "contentType": "application/json"
+  },
+  "body": {
+    "messageProperties": {
+      "timestamp": "2010-01-01T12:00:00Z",
+      "correlationId": "90015098-3cd2-3fb0-9696-3f7d28e17f72",
+      "replyTo": "sdsclient.localhost"
+    },
+    "convergedSystem": {
+      "identity": {
+        "elementType": "VCESYSTEM",
+        "identifier": "VXB-340",
+        "serialNumber": "RTP-VXB340-DQAV34",
+        "businessKeys": []
+      },
+      "definition": {
+        "productFamily": "VCESYSTEM",
+        "product": "VXBLOCK",
+        "modelFamily": "340",
+        "model": "VxB340-5400"
+      },
+      "groups": [
+        {
+          "name": "Management",
+          "type": "MANAGEMENT",
+          "parentSystemIdentifiers": [
+            "VXB-340"
+          ],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": []
+        },
+        {
+          "name": "ManagementNetwork",
+          "type": "NETWORK",
+          "parentSystemIdentifiers": [],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": [
+            "VXB-340-AMP"
+          ]
+        },
+        {
+          "name": "ManagementCompute",
+          "type": "COMPUTE",
+          "parentSystemIdentifiers": [],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": [
+            "VXB-340-AMP"
+          ]
+        },
+        {
+          "name": "ManagementStorage",
+          "type": "STORAGE",
+          "parentSystemIdentifiers": [],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": [
+            "VXB-340-AMP"
+          ]
+        },
+        {
+          "name": "SystemNetwork",
+          "type": "NETWORK",
+          "parentSystemIdentifiers": [
+            "VXB-340"
+          ],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": []
+        },
+        {
+          "name": "SystemNetworkVirtual",
+          "type": "NETWORK",
+          "parentSystemIdentifiers": [],
+          "parentGroupNames": [
+            "SystemNetwork"
+          ],
+          "parentSubSystemIdentifiers": []
+        },
+        {
+          "name": "SystemStorage",
+          "type": "STORAGE",
+          "parentSystemIdentifiers": [
+            "VXB-340"
+          ],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": []
+        },
+        {
+          "name": "SystemCompute",
+          "type": "COMPUTE",
+          "parentSystemIdentifiers": [
+            "VXB-340"
+          ],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": []
+        },
+        {
+          "name": "SystemVirtualization",
+          "type": "VIRTUALIZATION",
+          "parentSystemIdentifiers": [
+            "VXB-340"
+          ],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": []
+        },
+        {
+          "name": "SystemRacks",
+          "type": "RACKS",
+          "parentSystemIdentifiers": [
+            "VXB-340"
+          ],
+          "parentGroupNames": [],
+          "parentSubSystemIdentifiers": []
+        }
+      ],
+      "endpoints": [
+        {
+          "identifier": "COPRHD-EP",
+          "protocol": "REST",
+          "address": "10.3.60.167",
+          "type": "COPRHD",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "root",
+                "password": "Password1!"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "VIPR-EP",
+          "protocol": "REST",
+          "address": "10.1.174.56",
+          "type": "VIPR",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "root",
+                "password": "V1rtu@1c3!"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "MGMT-N3A-EP-admin",
+          "protocol": "SSH",
+          "address": "10.1.139.1",
+          "credentials": [
+            {
+              "name": "ADMIN",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "MGMT-N3A-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.1",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "public"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "MGMT-N3B-EP-admin",
+          "protocol": "SSH",
+          "address": "10.1.139.2",
+          "credentials": [
+            {
+              "name": "ADMIN",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "MGMT-N3B-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.2",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "public"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "N5A-EP-admin",
+          "protocol": "SSH",
+          "address": "10.1.139.22",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "N5A-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.22",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "public"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "N5B-EP-admin",
+          "protocol": "SSH",
+          "address": "10.1.139.23",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "N5B-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.23",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "public"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "M9B-EP-admin",
+          "protocol": "SSH",
+          "address": "10.1.139.21",
+          "credentials": [
+            {
+              "name": "ADMIN",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "M9B-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.21",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "public"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "NSX-EP",
+          "protocol": "SSH",
+          "address": "10.3.51.6",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "V1rtu@1c3!"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "VNX-ECOM-EP",
+          "protocol": "HTTP",
+          "address": "10.1.134.43",
+          "type": "ECOM",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "#1Password"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "VNX-CONTROLSTATION-EP",
+          "protocol": "HTTP",
+          "address": "10.1.134.50",
+          "type": "CONTROL_STATION ",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "nasadmin",
+                "password": "nasadmin"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "VNXE-2-AMP-EP",
+          "protocol": "SSH",
+          "address": "10.1.133.18",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "VCENTER-1-EP",
+          "protocol": "SSH",
+          "address": "10.1.139.39",
+          "type": "",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": " administrator@vsphere.local ",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "UCS-1-EP-SSH",
+          "protocol": "SSH",
+          "address": "10.1.139.30",
+          "type": "",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "UCS-1-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.39",
+          "type": "",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "public"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "SERVER-A-EP-admin",
+          "protocol": "SSH",
+          "address": "10.1.139.10",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "SERVER-A-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.10",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "cimpublic"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "SERVER-B-EP-admin",
+          "protocol": "SSH",
+          "address": "10.1.139.11",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "username": "admin",
+                "password": "Vc3m0l@b"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "SERVER-B-EP-SNMP",
+          "protocol": "SNMP",
+          "address": "10.1.139.11",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "cimpublic"
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "IPI-1-EP",
+          "protocol": "SNMP",
+          "address": "10.1.164.7",
+          "credentials": [
+            {
+              "name": "DEFAULT",
+              "credentialElements": {
+                "community": "public"
+              }
+            }
+          ]
+        }
+      ],
+      "subSystems": [
+        {
+          "identity": {
+            "elementType": "AMP",
+            "identifier": "VXB-340-AMP",
+            "serialNumber": "AMP-2S-123",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VCESYSTEM",
+            "product": "AMP",
+            "modelFamily": "AMP-2",
+            "model": "AMP-2S"
+          },
+          "endpoints": [],
+          "parentGroupNames": [
+            "Management"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "UCS",
+            "identifier": "UCS-1",
+            "address": "10.1.139.30",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "UCS",
+            "product": "UCS",
+            "modelFamily": "UCS",
+            "model": "UCS"
+          },
+          "endpoints": [
+            "UCS-1-EP-SSH",
+            "UCS-1-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "SystemCompute"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "identity": {
+            "elementType": "SWITCH",
+            "identifier": "MGMT-N3A",
+            "address": "10.1.139.1",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "NEXUS",
+            "modelFamily": "N3K",
+            "model": "3172TQ"
+          },
+          "endpoints": [
+            "MGMT-N3A-EP-admin",
+            "MGMT-N3A-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "ManagementNetwork"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "SWITCH",
+            "identifier": "MGMT-N3B",
+            "address": "10.1.139.2",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "NEXUS",
+            "modelFamily": "N3K",
+            "model": "3048"
+          },
+          "endpoints": [
+            "MGMT-N3B-EP-admin",
+            "MGMT-N3B-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "ManagementNetwork"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "SWITCH",
+            "identifier": "N5A",
+            "address": "10.1.139.22",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "NEXUS",
+            "modelFamily": "N5K",
+            "model": "5548"
+          },
+          "endpoints": [
+            "N5A-EP-admin",
+            "N5A-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "SystemNetwork"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "SWITCH",
+            "identifier": "N5B",
+            "address": "10.1.139.23",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "NEXUS",
+            "modelFamily": "N5K",
+            "model": "5548"
+          },
+          "endpoints": [
+            "N5B-EP-admin",
+            "N5B-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "SystemNetwork"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "SWITCH",
+            "identifier": "M9A",
+            "address": "10.1.139.20",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "MDS",
+            "modelFamily": "M9K",
+            "model": "9148S"
+          },
+          "endpoints": [
+            "COPRHD-EP"
+          ],
+          "parentGroupNames": [
+            "SystemNetwork"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "SWITCH",
+            "identifier": "M9B",
+            "address": "10.1.139.21",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "MDS",
+            "modelFamily": "M9K",
+            "model": "9148"
+          },
+          "endpoints": [
+            "M9B-EP-admin",
+            "M9B-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "SystemNetwork"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "SWITCH",
+            "identifier": "NSX-1",
+            "address": "10.3.51.6",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "NSX",
+            "product": "NSX"
+          },
+          "endpoints": [
+            "NSX-EP"
+          ],
+          "parentGroupNames": [
+            "SystemNetworkVirtual"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "STORAGEECOMSERVER",
+            "identifier": "VNX-1-ECOM",
+            "address": "10.1.139.46",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VNX",
+            "product": "VNX",
+            "modelFamily": "VNX5XXX",
+            "model": "VNX5401"
+          },
+          "endpoints": [
+            "VIPR-EP"
+          ],
+          "parentGroupNames": [
+            "SystemStorage"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "STORAGECONTROLSTATION",
+            "identifier": "VNX-1-CONTROL-STATION",
+            "address": "10.1.139.50",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VNX",
+            "product": "VNX",
+            "modelFamily": "VNX5XXX",
+            "model": "VNX5401"
+          },
+          "endpoints": [
+            "VIPR-EP"
+          ],
+          "parentGroupNames": [
+            "SystemStorage"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "STORAGEECOMSERVER",
+            "identifier": "VNX-2-ECOM",
+            "address": "10.1.171.144",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VNX",
+            "product": "VNX",
+            "modelFamily": "VNX5XXX",
+            "model": "VNX5401"
+          },
+          "endpoints": [
+            "COPRHD-EP"
+          ],
+          "parentGroupNames": [
+            "SystemStorage"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "STORAGECONTROLSTATION",
+            "identifier": "VNX-2-CONTROL-STATION",
+            "address": "10.1.171.148",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VNX",
+            "product": "VNX",
+            "modelFamily": "VNX5XXX",
+            "model": "VNX5401"
+          },
+          "endpoints": [
+            "COPRHD-EP"
+          ],
+          "parentGroupNames": [
+            "SystemStorage"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "STORAGEARRAY",
+            "identifier": "VNX-3-MS",
+            "address": " 10.1.134.43",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VNX",
+            "product": "VNX",
+            "modelFamily": "VNX2XXX",
+            "model": "VNX5200"
+          },
+          "endpoints": [
+            "VNX-ECOM-EP",
+            "VNX-CONTROLSTATION-EP"
+          ],
+          "parentGroupNames": [
+            "SystemStorage"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "STORAGEARRAY",
+            "identifier": "VNXE-2-AMP",
+            "address": "10.1.133.18",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VNXE",
+            "product": "VNXE",
+            "modelFamily": "VNXE3XXX",
+            "model": "VNXE3205"
+          },
+          "endpoints": [
+            "VNXE-2-AMP-EP"
+          ],
+          "parentGroupNames": [
+            "ManagementStorage"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "STORAGEARRAY",
+            "identifier": "VNXE-1",
+            "address": "10.1.139.6",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VNXE",
+            "product": "VNXE"
+          },
+          "endpoints": [
+            "COPRHD-EP"
+          ],
+          "parentGroupNames": [
+            "SystemStorage"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "VCENTER",
+            "identifier": "VCENTER-1",
+            "address": "10.1.139.39",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "VCENTER",
+            "product": "VCENTER",
+            "modelFamily": "VCENTER",
+            "model": "VCENTER"
+          },
+          "endpoints": [
+            "VCENTER-1-EP"
+          ],
+          "parentGroupNames": [
+            "SystemVirtualization"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "COMPUTESERVER",
+            "identifier": "SERVER-A",
+            "address": "10.1.139.10",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "UCS",
+            "product": "CSERIES",
+            "modelFamily": "C220",
+            "model": "M3"
+          },
+          "endpoints": [
+            "SERVER-A-EP-admin",
+            "SERVER-A-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "ManagementCompute"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "COMPUTESERVER",
+            "identifier": "SERVER-B",
+            "address": "10.1.139.11",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "UCS",
+            "product": "CSERIES",
+            "modelFamily": "C220",
+            "model": "M4"
+          },
+          "endpoints": [
+            "SERVER-B-EP-admin",
+            "SERVER-B-EP-SNMP"
+          ],
+          "parentGroupNames": [
+            "ManagementCompute"
+          ]
+        },
+        {
+          "identity": {
+            "elementType": "RACK",
+            "identifier": "IPI-1",
+            "address": "10.1.164.7",
+            "businessKeys": []
+          },
+          "definition": {
+            "productFamily": "IPI",
+            "product": "IPI"
+          },
+          "endpoints": [
+            "IPI-1-EP"
+          ],
+          "parentGroupNames": [
+            "SystemRacks"
+          ]
+        }
+      ]
+    }
+  }
+}

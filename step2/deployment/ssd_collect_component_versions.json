@@ -1,0 +1,21 @@
+{
+  "configuration": {
+    "host": "localhost",
+    "exchange": "exchange.dell.cpsd.hal.orchestrator.request",
+    "routingKey": "dell.cpsd.hal.orchestrator.collect.component.versions"
+  },
+  "properties": {
+    "headers": {
+      "__TypeId__": "com.dell.cpsd.hal.orchestrator.service.collect.component.versions"
+    },
+    "contentType": "application/json"
+  },
+  "body": {
+    "messageProperties": {
+		"timestamp": "2010-01-01T12:00:00Z",
+		"correlationId": "abcdabcd-abcd-abcd-abcd-abcdabcdabcd",
+		"replyTo": "hal.localhost"
+		}
+    
+    }
+}
