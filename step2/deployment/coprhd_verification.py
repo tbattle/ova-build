@@ -1,8 +1,8 @@
 import argparse
 import requests
-from requests.packages.urllib3.exceptions import InsecurePlatformWarning, InsecureRequestWarning, ConnectionError
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-requests.packages.urllib3.disable_warnings(InsecurePlatformWarning)
+#from requests.packages.urllib3.exceptions import InsecurePlatformWarning, InsecureRequestWarning, ConnectionError
+#requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+#requests.packages.urllib3.disable_warnings(InsecurePlatformWarning)
 import support_tools
 
 def coprhd_verification():
