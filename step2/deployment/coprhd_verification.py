@@ -1,7 +1,6 @@
 import argparse
 import requests
 import requests.packages.urllib3
-requests.packages.urllib3.disable_warnings()
 import support_tools
 
 def coprhd_verification():
