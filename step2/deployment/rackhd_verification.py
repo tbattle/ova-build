@@ -15,7 +15,7 @@ def rackhd_verification():
         # Verify Active API
         my_return_value = support_tools.wait_for_port(host=args.myVM_FQDN, port=8080, wait_time=120, check_interval=15)
         if my_return_value == True:
-            my_api_call = requests.request('GET', url='http://' + args.myVM_FQDN + ':8080/api/2.0/config', verify=False, allow_redirects=False)
+            my_api_call = requests.request('GET', url='http://' + args.myVM_FQDN + ':8080/api/2.0/config', allow_redirects=False)
             print(my_api_call)
             if my_api_call.status_code == 200:
                 pass

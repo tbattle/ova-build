@@ -11,7 +11,7 @@ def coprhd_verification():
         # Verify Login Page
         my_return_value = support_tools.wait_for_port(host=args.myVM_FQDN, port=80, wait_time=120, check_interval=15)
         if my_return_value == True:
-            my_api_call = requests.request('GET', url='https://' + args.myVM_FQDN, verify=False, allow_redirects=True)
+            my_api_call = requests.request('GET', url='https://' + args.myVM_FQDN, allow_redirects=True)
             print(my_api_call)
             if my_api_call.status_code == 200:
                 pass
