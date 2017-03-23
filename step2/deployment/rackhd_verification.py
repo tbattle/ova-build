@@ -1,8 +1,7 @@
 import argparse
 import requests
-#from requests.packages.urllib3.exceptions import InsecurePlatformWarning, InsecureRequestWarning, ConnectionError
-#requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-#requests.packages.urllib3.disable_warnings(InsecurePlatformWarning)
+import requests.packages.urllib3
+requests.packages.urllib3.disable_warnings()
 import support_tools
 
 def rackhd_verification():
