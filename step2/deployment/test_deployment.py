@@ -143,7 +143,7 @@ def test_coprhd():
         my_pass_value = False
 
     print('')
-    print('http://' + my_coprhd_fqdn)
+    print('https://' + my_coprhd_fqdn)
     print('')
 
     assert my_pass_value == True
