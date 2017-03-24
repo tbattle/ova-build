@@ -55,7 +55,6 @@ echo "*** Verify Symphony Deployment *** "
 echo
 python symphony_verification.py --myVM_FQDN $1
 
-# Do Someting Here for CoprHD
 # Verify CoprHD Deployment
 echo
 echo "*** Verify CoprHD Deployment *** "
@@ -63,3 +62,6 @@ echo "*** Verify CoprHD Deployment *** "
 echo "*** Verify CoprHD Deployment *** "
 echo
 python coprhd_verification.py --myVM_FQDN $3
+
+# Test Suites
+. test_deployment.sh bt-symphony.mpe.lab.vce.com bt-rackhd.mpe.lab.vce.com bt-coprhd.mpe.lab.vce.com
