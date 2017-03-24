@@ -9,4 +9,4 @@ echo "<h1 style=\"color: #5e9ca0;\">RackHD Deployment:</h1>" >> /var/www/Product
 echo "<h2>&nbsp; &nbsp; RackHD API:&nbsp;<a href=\"http://$2:8080/api/2.0/config\">http://$2:8080/api/2.0/config</a></h2>" >> /var/www/Product_Links.html
 echo "<p>&nbsp;</p>" >> /var/www/Product_Links.html
 echo "<h1 style=\"color: #5e9ca0;\">CoprHD Deployment:</h1>" >> /var/www/Product_Links.html
-echo "<h2>&nbsp; CoprHD Login Page:&nbsp;<a href=\"https://$3\">https://$3</a></h2>" >> /var/www/Product_Links.html
+echo "<h2>&nbsp; &nbsp; CoprHD Login Page:&nbsp;<a href=\"https://$3\">https://$3</a></h2>" >> /var/www/Product_Links.html
