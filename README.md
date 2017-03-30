@@ -12,7 +12,15 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 
 ## Deploying a demo of the Symphony OVA 
 
-You can download and install a demo of the Symphony OVA. 
+1. Download and unzip the project-symphony-controller.zip file into a new Vagrant folder.
+2. Open a terminal window and change directory your Vagrant folder.
+3. Run the command “vagrant up” (this can take up to 5-6 mins the first time)
+4. Once the Vagrant has created and started you Virtual Box you can ssh in to the box.
+  - Username: vagrant
+  - Password: vagrant
+  - IP Address: 127.0.0.1
+  - Port: 2222
+ 
 
 ## Before you begin
 
